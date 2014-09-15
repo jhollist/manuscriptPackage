@@ -104,7 +104,7 @@ plot(x,y)
 kable(mtcars[10:18,])
 ```
 
-Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor (Figure \ref(fig:Fig2). Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna. Nunc eu ornare purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem.
+Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor (Figure \ref{fig:Fig2}). Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna. Nunc eu ornare purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem.
 
 ```{r Fig2, echo=FALSE, fig.cap="Second figure showing a boxplot with ground breaking results. \\label{fig:Fig2}",cache=TRUE}
 a<-sort(rnorm(100))

@@ -167,9 +167,7 @@ $endif$
 \renewcommand{\headrulewidth}{0pt}
 \rfoot{\today}
 \lfoot{\thepage}
-%%Changed default abstract width
-%\renewenvironment{abstract}{%
-
+%%Changed default abstract width and added lines
 \renewenvironment{abstract}{
   \hfill\begin{minipage}{1\textwidth}
   \rule{\textwidth}{1pt}\vspace{5pt}
