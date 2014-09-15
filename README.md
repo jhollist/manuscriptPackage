@@ -1,0 +1,37 @@
+manuscriptPackage
+====================
+
+This repository contains materials for using an R package to ogranize, distribute and provide a reproducible manuscript. Since it is structured as an R package all scripts can be save as functions \R, data stored in \data, and the manuscript stored as an R Markdown file in \vignettes.  See the manuscript.Rmd for an example of how to layout the document, including allowed YAML, tables and figures with captioning and references in a .bib file processed through pandoc.   
+
+#Install the Package
+To install the package and gain access to the materials do the following:
+
+```
+install.packages("devtools")
+library("devtools")
+install_github("manuscriptPackage","jhollist")
+library("manuscriptPackage")
+```
+
+If this were a real manuscript, the data used in this manuscript would be available via:
+
+```
+#This does not work as not data is included with this example
+data(manuscript_data)
+```
+
+And the manuscript vignette can be read via:
+
+```
+vignette("manuscript",package="manuscriptPackage")
+```
+
+#Thanks
+The inspiration for housing a  manuscript entierly within a package came from two sources.  First, @rmflight has two blog posts about this concept.  [First post](http://rmflight.github.io/posts/2014/07/analyses_as_packages.html) lays out the idea and the [second post](http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html) details the steps to do it. Second is @cboettig's [template package](https://github.com/cboettig/template).  
+
+Everything here is built upon their efforts.  The latex template is a modified version of the default latex template that ships with pandoc/rstudio.
+
+#Questions/Suggestions
+If you have any questions about this template, please use the issues in this repository.  I will do my best to get back to you quickly.
+
+If I have messed something up or if you have some thoughts on ehancements (i.e. different latex templates/YAML) please fork, make those changes and submit a pull request.
