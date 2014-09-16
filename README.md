@@ -1,3 +1,5 @@
+![travis_badge](https://travis-ci.org/jhollist/manuscriptPackage.svg)
+
 manuscriptPackage
 ====================
 
