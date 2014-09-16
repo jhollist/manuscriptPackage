@@ -58,7 +58,7 @@ knit_hooks$set(output = function(x, options) {
 })
 ```
 
-```{r analysis , include=FALSE, echo=FALSE, cache=TRUE}
+```{r analysis , include=FALSE, echo=FALSE, cache=FALSE}
 #All analysis in here, that way all bits of the paper have access to the final objects
 #Place tables and figures and numerical results where they need to go.
 ```
@@ -86,27 +86,27 @@ Nullam diam quam, egestas sed erat quis, placerat tincidunt nisl. Sed varius ac 
 Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor. [@usepa2009national].  Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna. Nunc eu ornare purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem. [@homer2004development;@xian2009updating].  
 
 Suspendisse elit neque, placerat vitae venenatis id, auctor vestibulum augue. Vivamus iaculis magna at sapien sodales, a sagittis tellus sagittis. Sed laoreet ac massa id fringilla. In et enim eget ante tincidunt aliquet ut in risus(Table \ref{tab:Table1}). In vestibulum, nisl non viverra ullamcorper, odio nisl scelerisque sapien, vitae ornare neque odio ut odio. Maecenas vitae leo rhoncus, egestas quam ac, dapibus eros. 
-```{r Table1, results='asis', echo=FALSE, tab.cap="This is the first example table\\label{tab:Table1}",cache=TRUE}
+```{r Table1, results='asis', echo=FALSE, tab.cap="This is the first example table\\label{tab:Table1}",cache=FALSE}
 kable(head(iris))
 ```
 
 #Results
 Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor (Figure \ref{fig:Fig1}). Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna (Table \ref{tab:Table2}). Nunc eu ornare purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem.
 
-```{r Fig1, echo=FALSE, fig.cap="Just my first figure with a very fantastic caption.\\label{fig:Fig1}", cache=TRUE}
+```{r Fig1, echo=FALSE, fig.cap="Just my first figure with a very fantastic caption.\\label{fig:Fig1}", cache=FALSE}
 x<-rnorm(100)
 y<-jitter(x,1000)
 plot(x,y)
 
 ```
 
-```{r Table2, results='asis', echo=FALSE,tab.cap="A second table showing some of the mtcars dataset.\\label{tab:Table2}",cache=TRUE}
+```{r Table2, results='asis', echo=FALSE,tab.cap="A second table showing some of the mtcars dataset.\\label{tab:Table2}",cache=FALSE}
 kable(mtcars[10:18,])
 ```
 
 Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor (Figure \ref{fig:Fig2}). Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna. Nunc eu ornare purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem.
 
-```{r Fig2, echo=FALSE, fig.cap="Second figure showing a boxplot with ground breaking results. \\label{fig:Fig2}",cache=TRUE}
+```{r Fig2, echo=FALSE, fig.cap="Second figure showing a boxplot with ground breaking results. \\label{fig:Fig2}",cache=FALSE}
 a<-sort(rnorm(100))
 b<-c(rep("Group Small",35),rep("Group Big",65))
 boxplot(a~b)

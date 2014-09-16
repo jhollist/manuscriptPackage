@@ -209,9 +209,8 @@ $if(title)$
 \end{center}
 $endif$
 %%Adds Author, correspond email asterisk, and affilnum from YAML
-$if(author)$
 \begin{center}
-\large 
+\large
 $for(author)$
 $if(author.name)$
 $author.name$$if(author.affilnum)$$if(author.email)$ \textsuperscript{*}$endif$ \textsuperscript{$author.affilnum$} $endif$
@@ -220,29 +219,29 @@ $author$
 $endif$
 $endfor$
 \end{center}
-$endif$
 %%Adds affiliations from YAML
 \begin{justify}
-$if(affiliation)$
 \footnotesize \emph{ 
 $for(affiliation)$
 \\*
 \textsuperscript{$affiliation.affilnum$}$affiliation.affil$\\*
 $endfor$
 }
-$endif$
 %%Adds corresponding author email(s) from YAML
-$if(author)$
+\newcounter{num}
+\setcounter{num}{1}
 \\[0.1cm]
-\footnotesize \emph{
-\textsuperscript{*} corresponding author: 
+\footnotesize \emph{ 
 $for(author)$
 $if(author.email)$
-$author.email$ 
+\ifnum\value{num}=1%
+\textsuperscript{*} corresponding author:
+\fi
+$author.email$
+\stepcounter{num}
 $endif$
 $endfor$
 }
-$endif$
 \end{justify}
 %%Adds date from YAML
 $if(date)$
