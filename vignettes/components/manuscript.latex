@@ -209,9 +209,8 @@ $if(title)$
 \end{center}
 $endif$
 %%Adds Author, correspond email asterisk, and affilnum from YAML
-$if(author)$
 \begin{center}
-\large 
+\large
 $for(author)$
 $if(author.name)$
 $author.name$$if(author.affilnum)$$if(author.email)$ \textsuperscript{*}$endif$ \textsuperscript{$author.affilnum$} $endif$
@@ -220,7 +219,6 @@ $author$
 $endif$
 $endfor$
 \end{center}
-$endif$
 %%Adds affiliations from YAML
 \begin{justify}
 $if(affiliation)$
