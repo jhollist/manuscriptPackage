@@ -1,5 +1,5 @@
-#' manuscript_package
+#' manuscriptPackage
 #'
-#' @name manuscript_package
+#' @name manuscriptPackage
 #' @docType package
 NULL
