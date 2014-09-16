@@ -34,7 +34,7 @@ abstract: no
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Modeling Lake Trophic State: A Data Mining Approach}
+%\VignetteIndexEntry{Example Manuscript}
 -->
 
 ```{r setup, include=FALSE, echo=FALSE}
