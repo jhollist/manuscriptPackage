@@ -1,6 +1,6 @@
 ---
-title: 'Example Manuscript: A template for using and R package to host a manuscript'
-author: 
+title: 'Example Manuscript: A template for using an R package to house a reproducible manuscript'
+author:  
 - name: Jeffrey W. Hollister
   affilnum: '1,2'
 - name: Another Author 
