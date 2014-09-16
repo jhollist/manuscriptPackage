@@ -1,30 +1,37 @@
 manuscriptPackage
 ====================
 
-This repository contains materials for using an R package to ogranize, distribute and provide a reproducible manuscript. Since it is structured as an R package all scripts can be save as functions \R, data stored in \data, and the manuscript stored as an R Markdown file in \vignettes.  See the manuscript.Rmd for an example of how to layout the document, including allowed YAML, tables and figures with captioning and references in a .bib file processed through pandoc.   
+This repository contains materials for using an R package to organize, provide access to data, and distribute a reproducible manuscript. Since it is structured as an R package all scripts can be save as functions \R, data stored in \data, and the manuscript stored as an R Markdown file in \vignettes.  See the manuscript.Rmd for an example of how to layout the document, including allowed YAML, tables and figures with captioning and references in a .bib file processed through pandoc.
+
+The current .latex template is a generic manuscript and could be used for draft versions of a manuscript or possible for pre-prints.  In the future having additional .latex files for other journals (e.g. plos, JSS, etc.) that parse the YAML would be useful.  Don't know if I will get around to that.
 
 #Install the Package
 To install the package and gain access to the materials do the following:
-
 ```
 install.packages("devtools")
 library("devtools")
 install_github("manuscriptPackage","jhollist")
 library("manuscriptPackage")
 ```
-
 If this were a real manuscript, the data used in this manuscript would be available via:
-
 ```
-#This does not work as not data is included with this example
+#This does not work as no data is included with this example
 data(manuscript_data)
 ```
-
 And the manuscript vignette can be read via:
-
 ```
 vignette("manuscript",package="manuscriptPackage")
 ```
+
+#How to use this?
+As this is a function-free package(if they were all this easy to build!), it has little use currently being installed into R (except if you want to view the rendered output with `vignette()`).  It is useful, however, as a starting point for new manuscripts.  The way I have used it is as follows:
+
+1. Fork it
+2. Rename it.  You will need to rename the Github repo, rename the package in `DESCRIPTION`, rename `manuscriptPackage-package.r` and change the name in the `manuscriptPackage-package.r` documentation.
+3. Add some functions in \R.
+4. Add your data in \data.
+5. Edit \vignettes\manuscript.Rmd to include your manuscript
+6. Commit, push, and share!
 
 #Thanks
 The inspiration for housing a  manuscript entierly within a package came from two sources.  First, @rmflight has two blog posts about this concept.  [First post](http://rmflight.github.io/posts/2014/07/analyses_as_packages.html) lays out the idea and the [second post](http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html) details the steps to do it. Second is @cboettig's [template package](https://github.com/cboettig/template).  
