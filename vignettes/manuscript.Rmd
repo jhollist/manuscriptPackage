@@ -71,11 +71,14 @@ knit_hooks$set(output = function(x, options) {
 
 <!-- Abstract is being wrapped in latex here so that all analysis can be run in the chunk above and the results reproducibly referenced in the abstract. -->
 
-\begin{singlespace}
-\begin{abstract}
+\singlespace
+
+\vspace{2mm}\hrule
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in sem sed sem pharetra eleifend vitae id massa. Curabitur et erat sit amet enim gravida dapibus quis vel ex. Maecenas luctus suscipit magna id vehicula. Quisque tincidunt auctor dignissim. Nunc vitae nulla vel lorem facilisis interdum non in mi. Donec fringilla luctus lacus ut egestas. Pellentesque eget tellus et ante tristique euismod. Proin at scelerisque ex, ac faucibus sem. In nec efficitur nulla. Nam libero augue, tristique et neque sed, pellentesque commodo lacus. Morbi vitae ultrices arcu. Suspendisse elit neque, placerat vitae venenatis id, auctor vestibulum augue. Vivamus iaculis magna at sapien sodales, a sagittis tellus sagittis. Sed laoreet ac massa id fringilla. In et enim eget ante tincidunt aliquet ut in risus. In vestibulum, nisl non viverra ullamcorper, odio nisl scelerisque sapien, vitae ornare neque odio ut odio. Maecenas vitae leo rhoncus, egestas quam ac, dapibus eros. Quisque molestie venenatis urna quis malesuada. Sed malesuada semper malesuada. Nulla aliquet maximus urna eu eleifend. Suspendisse elementum est vel ornare pulvinar. Curabitur quis aliquet massa, eget sollicitudin tellus. Phasellus tempus urna molestie finibus ultricies.
-\end{abstract}
-\end{singlespace}
+
+\vspace{3mm}\hrule
+\doublespace
 
 #Introduction
 Nullam et accumsan urna, mollis vulputate dolor. Donec nec nisl sagittis, laoreet nibh a, imperdiet eros. Ut sagittis ipsum diam. Nulla auctor justo eu ante sodales sollicitudin. Aenean leo lacus, consequat et aliquet vel, faucibus sit amet mi. Donec non nunc nec turpis cursus mattis a vel eros. Sed sit amet velit lacinia, congue est non, pulvinar dolor. Suspendisse felis erat, congue sit amet nunc nec, semper porttitor magna. Nunc Hollister et al. [-@hollister_predicting_2011] eu ornare  purus. Suspendisse id nulla in massa pharetra fringilla. Quisque vestibulum diam a ligula scelerisque, sit amet suscipit erat laoreet. Phasellus erat turpis, porta at nisi nec, eleifend interdum sem.
