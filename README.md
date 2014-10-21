@@ -12,7 +12,7 @@ To install the package and gain access to the materials do the following:
 ```
 install.packages("devtools")
 library("devtools")
-install_github("manuscriptPackage","jhollist")
+install_github("jhollist/manuscriptPackage",build_vignettes=TRUE)
 library("manuscriptPackage")
 ```
 If this were a real manuscript, the data used in this manuscript would be available via:
