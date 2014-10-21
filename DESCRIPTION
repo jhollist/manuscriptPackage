@@ -7,7 +7,7 @@ Description: This package contains an example Rmd and .latex template for
     creating a manuscript as a vignette in an R package.  This allows for
     installing a package in R and having data, script, etc reproduced in R.
 Suggests:
-    knitr
+    knitr, rmarkdown
 License: CC0
 LazyData: true
 VignetteBuilder: knitr
