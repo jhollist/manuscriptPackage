@@ -6,7 +6,7 @@ author:
 - name: Another Author 
   affilnum: 2
   email: author.another@example.com
-- name: Big A. Ecologist
+- name: Big Name Ecologist
   affilnum: 3
 affiliation:
 - affilnum: 1
