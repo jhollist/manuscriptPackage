@@ -26,7 +26,7 @@ vignette("manuscript",package="manuscriptPackage")
 ```
 
 #How to use this?
-As this is a function-free package(if they were all this easy to build!), it has little use currently being installed into R (except if you want to view the rendered output with `vignette()`).  It is useful, however, as a starting point for new manuscripts.  The way I have used it is as follows:
+As this is a function-free package (if they were all this easy to build!), it has little use currently being installed into R (except if you want to view the rendered output with `vignette()`).  It is useful, however, as a starting point for new manuscripts.  The way I have used it is as follows:
 
 1. Fork it
 2. Rename it.  You will need to rename the Github repo, rename the package in `DESCRIPTION`, rename `manuscriptPackage-package.r` and change the name in the `manuscriptPackage-package.r` documentation.
