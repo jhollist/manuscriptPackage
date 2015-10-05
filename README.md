@@ -35,6 +35,9 @@ As this is a function-free package (if they were all this easy to build!), it ha
 5. Edit /vignettes/manuscript.Rmd to include your manuscript.  The manuscript.Rmd included here provides for an example of how to layout the document and includes all(?) allowed YAML. Tables and figures with captioning and references in a .bib file are also include.
 6. Commit, push, and share!
 
+## Or, use it as a .Rmd template
+So huge thanks go to @Pakillo, who wrapped this template up, along with some others, to be used directly from the RStudio interface. His repo, [rmdTemplates](https://github.com/Pakillo/rmdTemplates) has the details on install.  Once installed you can seled the template and knit direcly from RStudio.  Thanks Francisco!
+
 #Thanks
 The inspiration for housing a  manuscript entierly within a package came from two sources.  First, @rmflight has two blog posts about this concept.  [First post](http://rmflight.github.io/posts/2014/07/analyses_as_packages.html) lays out the idea and the [second post](http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html) details the steps to do it. Second is @cboettig's [template package](https://github.com/cboettig/template).  
 
