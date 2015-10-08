@@ -15,6 +15,7 @@ affiliation:
   affil: Big Name University, Department of R, City, BN, 01020, USA
 - affilnum: 3
   affil: Private Research Institute, Office of Large Thoughts, Department of Beer, Cool Town, ST, 99921, USA
+footerdate: yes
 output:
   pdf_document:
     fig_caption: yes
